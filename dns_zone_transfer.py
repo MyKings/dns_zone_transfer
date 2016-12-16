@@ -95,8 +95,8 @@ def parser_cmd():
     command line interface
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('domain', help='The domain name to be detected. eg: www.google.com')
     parser.add_argument('-f', help='List of domain name files to check.')
+    parser.add_argument('-d',dest='domain', help='The domain name to be detected. eg: www.google.com')
     parser.add_argument('-o', dest='output', action='store_true', help='The resulting output file. default: False')
     parser.add_argument('-s', dest='server', help='Manually select a dns server.')
     conf = parser.parse_args()
