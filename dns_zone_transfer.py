@@ -3,8 +3,8 @@
 # author: MyKings
 
 """
-$ nmap --script dns_zne_transfer.nse --script-args dns_zone_transfer.domain dns.xxx.com -p 53 -Pn xxx.com
-$ dig @dns.xxx.com axfr xxx.com
+$ nmap --script dns-zone-transfer.nse --script-args dns-zone-transfer.domain=ns1.xxx.com -p 53 -Pn xxx.com
+$ dig @ns1.xxx.com axfr xxx.com
 """
 
 from __future__ import unicode_literals
